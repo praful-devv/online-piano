@@ -22,7 +22,7 @@ let G = document.querySelector("#G");
 let H = document.querySelector("#H");
 let I = document.querySelector("#I");
 let J = document.querySelector("#J");
-let k = document.querySelector('#k')
+let k = document.querySelector("#k");
 
 // let flag = 0;
 
@@ -31,7 +31,7 @@ addEventListener("keydown", function (dets) {
     aud1.play();
     aud1.currentTime = 0;
     A.style.scale = "0.98";
-    A.style.opacity = '0.5'
+    A.style.opacity = "0.5";
   } else if (dets.code === "KeyB") {
     aud2.play();
     aud2.currentTime = 0;
@@ -109,4 +109,59 @@ addEventListener("keyup", function () {
   k.style.scale = "1";
   k.style.opacity = "1";
   k.style.backgroundColor = "#000";
+});
+
+A.addEventListener("click", function () {
+  aud1.play();
+  aud1.currentTime = 0;
+});
+
+B.addEventListener("click", function () {
+  aud2.play();
+  aud2.currentTime = 0;
+});
+
+C.addEventListener("click", function () {
+  aud3.play();
+  aud3.currentTime = 0;
+});
+
+D.addEventListener("click", function () {
+  aud4.play();
+  aud4.currentTime = 0;
+});
+
+E.addEventListener("click", function () {
+  aud5.play();
+  aud5.currentTime = 0;
+});
+
+F.addEventListener("click", function () {
+  aud6.play();
+  aud6.currentTime = 0;
+});
+
+G.addEventListener("click", function () {
+  aud7.play();
+  aud7.currentTime = 0;
+});
+
+H.addEventListener("click", function () {
+  aud8.play();
+  aud8.currentTime = 0;
+});
+
+I.addEventListener("click", function () {
+  aud9.play();
+  aud9.currentTime = 0;
+});
+
+J.addEventListener("click", function () {
+  aud10.play();
+  aud10.currentTime = 0;
+});
+
+k.addEventListener("click", function () {
+  aud16.play();
+  aud16.currentTime = 0;
 });
