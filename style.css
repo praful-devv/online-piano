@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "aside top top" "aside top top" " aside section section" " aside section section";
+  padding: 5rem;
+  gap: 0.5rem;
+}
+main aside {
+  grid-area: aside;
+  background-color: blue;
+  border-radius: 0.5rem;
+}
+main #top {
+  grid-area: top;
+  background-color: red;
+  border-radius: 0.5rem;
+}
+main section {
+  grid-area: section;
+  background-color: rgb(162, 162, 156);
+  display: flex;
+  border-radius: 0.5rem;
+}
+main section .piano {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  position: relative;
+}
+main section .piano .white {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  background-color: blue;
+  border: none;
+}
+main section .piano .white button {
+  flex: 1;
+  box-shadow: -1px 2px 5px #000;
+  border: none;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 1rem 0;
+}
+main section .piano .black {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 7.5%;
+  gap: 5%;
+  border: none;
+}
+main section .piano .black button {
+  width: 5%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding: 1rem 0;
+} /*# sourceMappingURL=style.css.map */
